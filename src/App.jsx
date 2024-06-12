@@ -1,13 +1,29 @@
 import "./App.css";
-import { Hero, Navbar } from "./components";
+import {
+  Hero,
+  Navbar,
+  About,
+  Experience,
+  Tech,
+  Works,
+  Contact,
+  StarsCanvas,
+  EarthCanvas,
+} from "./components";
 
 function App() {
   return (
     <>
-      <section>
-        <Navbar />
-        <Hero />
-      </section>
+      <Navbar />
+      <Hero />
+      <About />
+      <Experience />
+      <Tech />
+      <Works />
+      <div className="bg-primary relative">
+        <Contact />
+        <StarsCanvas />
+      </div>
     </>
   );
 }

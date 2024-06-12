@@ -7,6 +7,7 @@
 #root {
   padding: 0;
   max-width: none;
+  text-align: start;
 }
 
 h1 {
