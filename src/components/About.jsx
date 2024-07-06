@@ -36,16 +36,18 @@ const About = () => {
         </motion.div>
         <motion.div variants={itemVariants}>
           <p className={`text-secondary`}>
-            I&apos;m a fullstack software developer with experience in
-            Typescript & Javascript.
+            A dedicated full-stack developer with a passion for crafting robust
+            backend systems. Alongside my development skills, I bring a keen
+            ability to manage projects effectively, ensuring seamless and
+            scalable web applications.
           </p>
         </motion.div>
         <div className="flex flex-wrap gap-12 mt-10">
           {services.map((service, index) => (
             <Tilt
               key={index}
-              className="p-[4px] bg-gradient-to-b from-[#00cea8] to-[#bf61ff] bg-tertiary rounded-2xl"
-              style={{ height: 300, width: 250 }}
+              className="p-[4px] bg-gradient-to-b from-[#00cea8] to-[#bf61ff] bg-tertiary rounded-2xl flex-grow"
+              style={{ height: 270, width: 172 }}
             >
               <div className="h-full w-full bg-tertiary rounded-xl flex flex-col  gap-10 justify-center items-center p-8">
                 <img
@@ -53,7 +55,7 @@ const About = () => {
                   src={`./${service.icon}`}
                   alt={service.title}
                 />
-                <p className="text-2xl font-bold text-white-100 text-center">
+                <p className="text-xl font-bold text-white-100 text-center">
                   {service.title}
                 </p>
               </div>

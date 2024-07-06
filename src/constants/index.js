@@ -23,6 +23,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  pasarnow,
+  brik,
 } from "../assets";
 
 export const navLinks = [
@@ -46,7 +48,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Frontend Developer",
     icon: mobile,
   },
   {
@@ -54,7 +56,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Project Manager",
     icon: creator,
   },
 ];
@@ -116,55 +118,38 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Product Manager + Fullstack Engineer",
+    company_name: "PT. Bangun Rancang Indonesia Kita (BRIK)",
+    icon: brik,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "May 2023 - Feb 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Spearheading ERP implementation for our sibling company, while concurrently managing project operations in our original company—streamlining processes on both fronts.",
+      "Conducted extensive user research, identifying pain points and devising innovative solutions to enhance user experience and address user's needs effectively.",
+      "Adaptively managed task delegation to accommodate the rapid-paced environment. Balancing both roles to tackle business strategy and development execution.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Fullstack Engineer",
+    company_name: "PT. Bangun Rancang Indonesia Kita (BRIK)",
+    icon: brik,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Dec 2022 - May 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Heavily contributed to the team and helped raise pre-seed investment of $12 million.",
+      "Developed responsive websites that fulfilled the UI/UX team's requirements.",
+      "Contributed actively to the design and development of backend applications.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Backend Software Engineer",
+    company_name: "PT. Usaha Pintar Pratama (Pasarnow)",
+    icon: pasarnow,
+    iconBg: "#383E56",
+    date: "May 2022 - Dec 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and integrated new features and APIs into the software application.",
+      "Managed server maintenance and troubleshooting.",
     ],
   },
 ];

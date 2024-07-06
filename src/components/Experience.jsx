@@ -51,8 +51,16 @@ const Experience = () => (
                 paddingBottom: "20px",
               }}
               date={`${experience.date}`}
-              iconStyle={{ background: "gray" }}
-              icon={<img src={`${experience.icon}`} />}
+              iconStyle={{ background: experience.iconBg }}
+              icon={
+                <div className="flex justify-center items-center w-full h-full">
+                  <img
+                    src={experience.icon}
+                    alt={experience.company_name}
+                    className="w-[70%] h-[70%] object-contain"
+                  />
+                </div>
+              }
               contentArrowStyle={{ borderRight: "7px solid rgb(35, 38, 49)" }}
             >
               <div className="mb-5">
