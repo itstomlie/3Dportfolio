@@ -8,7 +8,6 @@ import {
   Works,
   Contact,
   StarsCanvas,
-  EarthCanvas,
 } from "./components";
 
 function App() {

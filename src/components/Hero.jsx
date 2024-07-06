@@ -20,7 +20,7 @@ const Hero = () => {
 
       <ComputersCanvas />
 
-      <div className="absolute -bottom-20 left-1/2 z-50">
+      <div className="absolute bottom-20 md:-bottom-20 left-[48%] z-50">
         <div className="w-7 h-14 border-2 border-secondary rounded-full flex justify-center">
           <motion.div
             className="w-2.5 h-2.5 bg-secondary rounded-full"
