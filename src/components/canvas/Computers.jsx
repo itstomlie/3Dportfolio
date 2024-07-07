@@ -3,10 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useState } from "react";
 import useScreenSize from "../useScreenSize";
 
-const Computer = () => {
-  const screenSize = useScreenSize();
-  const isMobile = screenSize.width < 720;
-
+const Computer = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
   return (
     // <mesh>
@@ -33,8 +30,8 @@ const Computer = () => {
       <ambientLight intensity={0.5} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.4 : 0.75}
-        position={isMobile ? [0, -1, -0.9] : [0, -3.25, -1.5]}
+        scale={isMobile ? 0.9 : 1.2}
+        position={isMobile ? [0, -1.5, -0.9] : [0, -2, -1.5]}
         rotation={[-0.01, -0.2, -0.05]}
       />
     </mesh>
@@ -42,6 +39,9 @@ const Computer = () => {
 };
 
 const ComputerCanvas = () => {
+  const screenSize = useScreenSize();
+  const isMobile = screenSize.width < 720;
+
   return (
     // <Canvas camera={{ fov: 65, position: [0, 2, 5] }}>
     //   <Suspense>
@@ -58,8 +58,15 @@ const ComputerCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{
+        position: [20, 3, 5],
+        fov: 25,
+      }}
       gl={{ preserveDrawingBuffer: true }}
+      style={{
+        height: isMobile ? "35vh" : "50vh",
+        width: "100vw",
+      }}
     >
       <Suspense>
         <OrbitControls
@@ -71,7 +78,7 @@ const ComputerCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computer />
+        <Computer isMobile={isMobile} />
       </Suspense>
       <Preload all />
     </Canvas>

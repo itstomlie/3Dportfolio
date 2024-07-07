@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <div
+      id="contact"
       className={`${styles.bigPaddingXY} bg-primary h-full w-full flex flex-col items-center`}
     >
       <motion.div className="w-full md:h-[550px] h-[350px]">

@@ -5,25 +5,10 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experiences } from "../constants";
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.5,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-};
+import { containerVariants, experiences, itemVariants } from "../constants";
 
 const Experience = () => (
-  <div id="experience" className="scroll-mt-14">
+  <div id="experience" className="scroll-mt-14 md:scroll-mt-10">
     <motion.section
       initial="hidden"
       whileInView="visible"

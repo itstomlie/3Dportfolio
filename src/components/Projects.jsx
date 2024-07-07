@@ -1,26 +1,13 @@
 import { motion } from "framer-motion";
-import React from "react";
 import { styles } from "../styles";
-import { projects } from "../constants";
+import { containerVariants, itemVariants, projects } from "../constants";
 import { Tilt } from "react-tilt";
-const Works = () => {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.5,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
-
+const Projects = () => {
   return (
-    <div className={`${styles.bigPaddingXY} bg-primary`}>
+    <div
+      id="projects"
+      className={`${styles.bigPaddingXY} bg-primary scroll-mt-14 md:scroll-mt-10`}
+    >
       <motion.section
         initial="hidden"
         whileInView="visible"
@@ -40,7 +27,7 @@ const Works = () => {
           </p>
         </motion.div>
       </motion.section>
-      <div className="flex flex-wrap gap-12 mt-10">
+      <div className="flex justify-center md:justify-start flex-wrap gap-12 mt-10">
         {projects.map((project, index) => (
           <Tilt key={index} className="rounded-2xl" style={{ width: 300 }}>
             <div className="h-full w-full bg-tertiary rounded-xl p-4 space-y-5">
@@ -71,4 +58,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default Projects;

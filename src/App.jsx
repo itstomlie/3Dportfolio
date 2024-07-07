@@ -5,7 +5,7 @@ import {
   About,
   Experience,
   Tech,
-  Works,
+  Projects,
   Contact,
   StarsCanvas,
 } from "./components";
@@ -18,7 +18,7 @@ function App() {
       <About />
       <Experience />
       <Tech />
-      <Works />
+      <Projects />
       <div className="bg-primary relative">
         <Contact />
         <StarsCanvas />

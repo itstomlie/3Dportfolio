@@ -1,26 +1,11 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { Tilt } from "react-tilt";
-import { services } from "../constants";
+import { containerVariants, itemVariants, services } from "../constants";
 
 const About = () => {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.5,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
-
   return (
-    <div id="about" className="scroll-mt-14">
+    <div id="about" className="scroll-mt-14 md:scroll-mt-10">
       <motion.section
         initial="hidden"
         whileInView="visible"
