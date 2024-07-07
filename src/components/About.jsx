@@ -20,7 +20,7 @@ const About = () => {
   };
 
   return (
-    <>
+    <div id="about" className="scroll-mt-14">
       <motion.section
         initial="hidden"
         whileInView="visible"
@@ -42,20 +42,19 @@ const About = () => {
             scalable web applications.
           </p>
         </motion.div>
-        <div className="flex flex-wrap gap-12 mt-10">
+        <div className="grid grid-cols-2 gap-5 md:gap-12 md:flex md:flex-wrap mt-10">
           {services.map((service, index) => (
             <Tilt
               key={index}
-              className="p-[4px] bg-gradient-to-b from-[#00cea8] to-[#bf61ff] bg-tertiary rounded-2xl flex-grow"
-              style={{ height: 270, width: 172 }}
+              className="p-[4px] bg-gradient-to-b from-[#00cea8] to-[#bf61ff] bg-tertiary rounded-2xl flex-grow md:h-[270px] md:w-[172px] h-40 w-full"
             >
-              <div className="h-full w-full bg-tertiary rounded-xl flex flex-col  gap-10 justify-center items-center p-8">
+              <div className="h-full w-full bg-tertiary rounded-xl flex flex-col gap-2 md:gap-10 justify-center items-center md:p-8">
                 <img
-                  className="w-20 h-20"
+                  className="md:w-20 md:h-20 w-10 h-10"
                   src={`./${service.icon}`}
                   alt={service.title}
                 />
-                <p className="text-xl font-bold text-white-100 text-center">
+                <p className="md:text-xl font-bold text-white-100 text-center">
                   {service.title}
                 </p>
               </div>
@@ -63,7 +62,7 @@ const About = () => {
           ))}
         </div>
       </motion.section>
-    </>
+    </div>
   );
 };
 

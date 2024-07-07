@@ -124,9 +124,9 @@ const experiences = [
     iconBg: "#383E56",
     date: "May 2023 - Feb 2024",
     points: [
-      "Spearheading ERP implementation for our sibling company, while concurrently managing project operations in our original company—streamlining processes on both fronts.",
-      "Conducted extensive user research, identifying pain points and devising innovative solutions to enhance user experience and address user's needs effectively.",
-      "Adaptively managed task delegation to accommodate the rapid-paced environment. Balancing both roles to tackle business strategy and development execution.",
+      "Led ERP implementation, streamlining processes across multiple companies.",
+      "Conducted user research to improve experience and address user needs.",
+      "Managed task delegation, balancing business strategy and development execution.",
     ],
   },
   {
@@ -136,9 +136,9 @@ const experiences = [
     iconBg: "#383E56",
     date: "Dec 2022 - May 2023",
     points: [
-      "Heavily contributed to the team and helped raise pre-seed investment of $12 million.",
-      "Developed responsive websites that fulfilled the UI/UX team's requirements.",
-      "Contributed actively to the design and development of backend applications.",
+      "Contributed to team efforts, helping raise $12 million pre-seed investment.",
+      "Developed responsive websites meeting UI/UX team requirements.",
+      "Actively designed and developed backend applications for the company.",
     ],
   },
   {
@@ -148,8 +148,8 @@ const experiences = [
     iconBg: "#383E56",
     date: "May 2022 - Dec 2022",
     points: [
-      "Developed and integrated new features and APIs into the software application.",
-      "Managed server maintenance and troubleshooting.",
+      "Developed and integrated new features and APIs into software applications.",
+      "Managed server maintenance and troubleshooting for optimal performance.",
     ],
   },
 ];
