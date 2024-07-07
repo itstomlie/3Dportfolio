@@ -33,7 +33,7 @@ const About = () => {
               key={index}
               className="p-[4px] bg-gradient-to-b from-[#00cea8] to-[#bf61ff] bg-tertiary rounded-2xl flex-grow md:h-[270px] md:w-[172px] h-40 w-full"
             >
-              <div className="h-full w-full bg-tertiary rounded-xl flex flex-col gap-2 md:gap-10 justify-center items-center md:p-8">
+              <div className="h-full w-full bg-tertiary rounded-xl flex flex-col gap-2 md:gap-10 justify-center items-center md:p-8 p-3">
                 <img
                   className="md:w-20 md:h-20 w-10 h-10"
                   src={`./${service.icon}`}

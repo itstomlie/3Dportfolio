@@ -26,7 +26,7 @@ const Hero = () => {
         <ComputersCanvas />
       </div>
 
-      <div className="xl:mt-80 lg:mt-28 mt-20 sm:mt-2 md:mt-14 flex flex-col items-center z-20">
+      <div className="xl:mt-80 lg:mt-28 mt-10 sm:mt-2 md:mt-14 flex flex-col items-center z-20">
         <div className="w-7 h-14 border-2 border-secondary rounded-full flex justify-center z-20">
           <motion.div
             className="w-2.5 h-2.5 bg-secondary rounded-full z-20"
