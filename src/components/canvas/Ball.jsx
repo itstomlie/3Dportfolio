@@ -45,7 +45,7 @@ const BallCanvas = ({ icon }) => {
 
   useEffect(() => {
     // Set a random speed between -10 and 10, excluding 0
-    const speed = Math.random() > 0.5 ? 5 : -5;
+    const speed = Math.random() > 0.5 ? 2 : -2;
     setAutoRotateSpeed(speed);
   }, []);
 

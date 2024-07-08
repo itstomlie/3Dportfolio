@@ -25,6 +25,9 @@ import {
   threejs,
   pasarnow,
   brik,
+  nestjs,
+  nextjs,
+  sql,
 } from "../assets";
 
 export const navLinks = [
@@ -62,14 +65,14 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
+  // {
+  //   name: "HTML 5",
+  //   icon: html,
+  // },
+  // {
+  //   name: "CSS 3",
+  //   icon: css,
+  // },
   {
     name: "JavaScript",
     icon: javascript,
@@ -83,33 +86,46 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "nextjs",
+    icon: nextjs,
   },
   {
     name: "Three JS",
     icon: threejs,
   },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
+  // {
+  //   name: "Tailwind CSS",
+  //   icon: tailwind,
+  // },
   {
-    name: "git",
-    icon: git,
+    name: "Node JS",
+    icon: nodejs,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "nestjs",
+    icon: nestjs,
   },
+  {
+    name: "sql",
+    icon: sql,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+
+  // {
+  //   name: "git",
+  //   icon: git,
+  // },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
   {
     name: "docker",
     icon: docker,
