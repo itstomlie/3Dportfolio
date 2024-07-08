@@ -1,19 +1,22 @@
 import { EarthCanvas } from "./canvas";
 import { styles } from "../styles";
-import { inView, motion } from "framer-motion";
-import React, { useRef } from "react";
-import handleViewport from "react-in-viewport";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
-const Contact = (props) => {
-  const { inViewport, forwardedRef } = props;
+const Contact = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.05,
+    rootMargin: "200px",
+  });
 
   return (
     <div
       id="contact"
-      ref={forwardedRef}
+      ref={ref}
       className={`viewport-block ${styles.bigPaddingXY} bg-primary h-full w-full flex flex-col items-center`}
     >
-      {inViewport && (
+      {inView && (
         <>
           <motion.div className="w-full md:h-[550px] h-[350px]">
             <EarthCanvas />
@@ -78,8 +81,4 @@ const Contact = (props) => {
   );
 };
 
-const ViewportBlock = handleViewport(Contact);
-
-const Component = (props) => <ViewportBlock />;
-
-export default Component;
+export default Contact;
