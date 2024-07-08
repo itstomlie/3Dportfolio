@@ -2,6 +2,7 @@ import { useGLTF, Preload, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useState } from "react";
 import useScreenSize from "../useScreenSize";
+import CanvasLoader from "../CanvasLoader";
 
 const Computer = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
@@ -68,7 +69,7 @@ const ComputerCanvas = () => {
         width: "100vw",
       }}
     >
-      <Suspense>
+      <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           autoRotate={true}
           autoRotateSpeed={0.3}
