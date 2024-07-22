@@ -28,6 +28,7 @@ import {
   nestjs,
   nextjs,
   sql,
+  airbnbClone,
 } from "../assets";
 
 export const navLinks = [
@@ -198,27 +199,27 @@ const testimonials = [
 ];
 
 const projects = [
-  // {
-  //   name: "Car Rent",
-  //   description:
-  //     "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "mongodb",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "tailwind",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: carrent,
-  //   source_code_link: "https://github.com/",
-  // },
+  {
+    name: "Airbnb Clone",
+    description: "Created using latest Next.js combined with supabase",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: airbnbClone,
+    demoUrl: "https://airbnb.itstomlie.my.id/",
+    sourceCodeLink: "https://github.com/itstomlie/airbnb-clone",
+  },
   // {
   //   name: "Job IT",
   //   description:

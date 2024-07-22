@@ -32,6 +32,7 @@ import pasarnow from "./company/pasarnow.png";
 import brik from "./company/brik.png";
 
 import carrent from "./carrent.png";
+import airbnbClone from "./airbnbClone.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -69,4 +70,5 @@ export {
   nextjs,
   nestjs,
   sql,
+  airbnbClone,
 };
