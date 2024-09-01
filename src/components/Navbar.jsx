@@ -38,12 +38,14 @@ const Navbar = () => {
 
   return (
     <div
-      className={`${styles.paddingX} pt-[3vh] bg-primary w-full sticky top-0 z-[9999]`}
+      className={`${styles.paddingX} pt-[3vh] bg-primary w-full sticky top-0 z-[9999] border-b border-gray-200 border-opacity-10`}
     >
       <div className={`flex justify-between w-full pb-[3vh]`}>
         <a href="/" className="flex justify-center items-center gap-3">
-          <img src="./logo.svg" alt="logo" className="w-8" />
-          <h1 className="text-white text-lg font-bold text-nowrap">
+          <img src="./planet.ico" alt="logo" className="w-8" />
+          <h1
+            className={`text-lg font-bold bg-gradient-to-r from-white via-gray-300 to-gray-400 bg-clip-text text-transparent`}
+          >
             Tommy Lie | Portfolio
           </h1>
         </a>

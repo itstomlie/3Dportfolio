@@ -1,8 +1,6 @@
-import { Suspense } from "react";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { motion } from "framer-motion";
-import CanvasLoader from "./CanvasLoader";
 
 const Hero = () => {
   return (
@@ -13,13 +11,16 @@ const Hero = () => {
         className={`${styles.bigPaddingX} flex gap-5 sm:py-12 md:py-8 py-10 sm:pb-8`}
       >
         <div className="flex flex-col justify-center items-center">
-          <div className="w-4 h-4 rounded-full bg-[#804dee]"></div>
+          <div className="w-4 h-4 rounded-full bg-[#9bbaf0]"></div>
           <div className="w-1 h-52 sm:h-36 md:h-60 violet-gradient"></div>
         </div>
         <div className="text-start">
-          <h1 className={`${styles.heroHeadText}`}>Hi, I&apos;m Tommy</h1>
-          <p className={`${styles.heroSubText}`}>
-            Full-Stack Developer Specializing in Backend Solutions
+          <h1 className={`${styles.heroHeadText} ${styles.heroTextGradient} `}>
+            Hi, I&apos;m Tommy
+          </h1>
+
+          <p className={`${styles.heroSubText} `}>
+            Full-Stack Developer and budding AI engineer
           </p>
         </div>
       </div>

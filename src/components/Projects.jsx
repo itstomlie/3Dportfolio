@@ -15,11 +15,15 @@ const Projects = () => {
         viewport={{ once: true }}
         variants={containerVariants}
       >
-        <motion.div variants={itemVariants}>
+        {/* <motion.div variants={itemVariants}>
           <h2 className={`${styles.sectionSubText}`}>My Work</h2>
-        </motion.div>
+        </motion.div> */}
         <motion.div variants={itemVariants}>
-          <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+          <h2
+            className={`${styles.sectionHeadText} ${styles.sectionTextGradient}`}
+          >
+            Projects
+          </h2>
         </motion.div>
         <motion.div variants={itemVariants}>
           <p className={`text-secondary`}>
@@ -30,30 +34,37 @@ const Projects = () => {
       </motion.section>
       <div className="flex justify-center md:justify-start flex-wrap gap-12 mt-10">
         {projects.map((project, index) => (
-          <a href={project.demoUrl} key={index}>
+          <a
+            href={project.demoUrl}
+            key={index}
+            target="_blank"
+            rel="noreferrer"
+          >
             <Tilt className="rounded-2xl" style={{ width: 300 }}>
-              <div className="h-full w-full bg-tertiary rounded-xl p-4 space-y-5">
+              <div className="h-full w-full bg-surface rounded-xl p-4 space-y-5">
                 <div className="relative">
                   <img
                     src={`./${project.image}`}
                     alt={project.name}
-                    className="rounded-lg"
+                    className="rounded-lg h-36 w-full object-cover"
                   />
-                  <a
-                    href={project.sourceCodeLink}
-                    className="absolute top-2 right-2"
-                  >
-                    <div className="github">
-                      <img
-                        src={github}
-                        alt="github"
-                        className="z-10 w-10 h-10 text-black bg-black rounded-full p-2"
-                      />
-                    </div>
-                  </a>
+                  {project.sourceCodeLink && (
+                    <a
+                      href={project.sourceCodeLink}
+                      className="absolute top-2 right-2"
+                    >
+                      <div className="github">
+                        <img
+                          src={github}
+                          alt="github"
+                          className="z-10 w-10 h-10 text-black bg-black rounded-full p-2"
+                        />
+                      </div>
+                    </a>
+                  )}
                 </div>
                 <div className="space-y-2">
-                  <p className="text-2xl font-bold text-white-100 ">
+                  <p className="text-2xl font-bold text-white-primary ">
                     {project.name}
                   </p>
                   <p className="text-secondary text-sm">

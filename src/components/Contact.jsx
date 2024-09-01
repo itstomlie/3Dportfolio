@@ -32,6 +32,11 @@ const Contact = () => {
     setLoading(true);
 
     try {
+      if (!form.name || !form.email) {
+        alert("Please fill in your name and email");
+        return;
+      }
+
       await emailjs.send(
         import.meta.env.VITE_EMAIL_JS_SERVICE_ID,
         import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID,
@@ -75,12 +80,14 @@ const Contact = () => {
             <EarthCanvas />
           </motion.div>
           <div
-            className={`p-10 w-full max-w-xl bg-black-100 rounded-xl space-y-5 z-10`}
+            className={`p-10 w-full max-w-xl bg-surface rounded-xl space-y-5 z-10`}
           >
             <div>
               <p className={`${styles.sectionSubText}`}>GET IN TOUCH</p>
-              <p className={`${styles.sectionHeadText} text-white-100`}>
-                Contact.
+              <p
+                className={`${styles.sectionHeadText} ${styles.sectionTextGradient}`}
+              >
+                Contact
               </p>
             </div>
             <form
@@ -90,35 +97,35 @@ const Contact = () => {
               onSubmit={handleSubmit}
             >
               <div className="space-y-2 flex flex-col ">
-                <label htmlFor="" className="text-white-100">
+                <label htmlFor="" className="text-white-primary">
                   Your Name
                 </label>
                 <input
                   type="text"
                   name="name"
                   value={form.name}
-                  className="p-4 bg-tertiary rounded-lg outline-none"
-                  placeholder="John Doe"
+                  className="p-4 bg-onSurface rounded-lg outline-none"
+                  placeholder="Your name here"
                   required={true}
                   onChange={handleChange}
                 />
               </div>
               <div className="space-y-2 flex flex-col">
-                <label htmlFor="" className="text-white-100">
+                <label htmlFor="" className="text-white-primary">
                   Your Email
                 </label>
                 <input
                   type="email"
                   name="email"
                   value={form.email}
-                  className="p-4 bg-tertiary rounded-lg outline-none"
-                  placeholder="JohnDoe@gmail.com"
+                  className="p-4 bg-onSurface rounded-lg outline-none"
+                  placeholder="Your email here"
                   required={true}
                   onChange={handleChange}
                 />
               </div>
               <div className="space-y-2 flex flex-col">
-                <label htmlFor="" className="text-white-100">
+                <label htmlFor="" className="text-white-primary">
                   Your Message
                 </label>
                 <textarea
@@ -126,13 +133,13 @@ const Contact = () => {
                   name="message"
                   value={form.message}
                   required={true}
-                  className="p-4 bg-tertiary rounded-lg outline-none"
+                  className="p-4 bg-onSurface rounded-lg outline-none"
                   onChange={handleChange}
                 />
               </div>
               <button
                 type="submit"
-                className="bg-tertiary shadow-lg w-full p-2 rounded-lg font-bold text-white-100 flex justify-center"
+                className="bg-onSurface shadow-lg w-full p-2 rounded-lg font-bold text-white-primary flex justify-center"
               >
                 {loading ? <Loader2 className="animate-spin" /> : "Send"}
               </button>
@@ -142,7 +149,7 @@ const Contact = () => {
       )}
 
       <small className="mt-10">
-        Copyright &copy; {new Date().getFullYear()} itsTomLie.com
+        Copyright &copy; {new Date().getFullYear()} itsTomLie.my.id
       </small>
     </div>
   );

@@ -16,11 +16,22 @@ const Experience = () => (
       variants={containerVariants}
       className={`${styles.bigPaddingXY} bg-primary`}
     >
+      {/* <motion.div variants={itemVariants}>
+        <h2 className={`${styles.sectionSubText}`}>What have I done so far</h2>
+      </motion.div> */}
       <motion.div variants={itemVariants}>
-        <h2 className={`${styles.sectionSubText}`}>What I have done so far</h2>
+        <h2
+          className={`${styles.sectionHeadText} ${styles.sectionTextGradient}`}
+        >
+          Work Experience
+        </h2>
       </motion.div>
       <motion.div variants={itemVariants}>
-        <h2 className={`${styles.sectionHeadText}`}>Work Experience</h2>
+        <p className={`text-secondary`}>
+          Navigating the Challenges of Fast-Paced Startups: Gaining Valuable
+          Experience in Adapting to Rapid Changes, Driving Continuous
+          Improvement, and Cultivating a Growth Mindset.
+        </p>
       </motion.div>
 
       <VerticalTimeline animate={false} className="pt-16">
@@ -29,7 +40,7 @@ const Experience = () => (
             <VerticalTimelineElement
               key={index}
               contentStyle={{
-                background: "rgb(29, 24, 54)",
+                background: "#1e2536",
                 padding: "20px 32px",
               }}
               date={`${experience.date}`}
@@ -46,7 +57,7 @@ const Experience = () => (
               contentArrowStyle={{ borderRight: "7px solid rgb(35, 38, 49)" }}
             >
               <div className="mb-5">
-                <h3 className="vertical-timeline-element-title font-bold text-lg md:text-3xl">
+                <h3 className="vertical-timeline-element-title text-white-primary font-bold text-lg md:text-3xl">
                   {experience.title}
                 </h3>
 
@@ -59,7 +70,7 @@ const Experience = () => (
                   {experience.points.map((point, index) => (
                     <li
                       key={index}
-                      className="text-xs md:text-base mb-2 text-white-100"
+                      className="text-xs md:text-base mb-2 text-white-primary"
                     >
                       {point}
                     </li>

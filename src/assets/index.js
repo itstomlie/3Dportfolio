@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -35,9 +34,10 @@ import carrent from "./carrent.png";
 import airbnbClone from "./airbnbClone.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import nuerPay from "./NuerPay.png";
+import whatsappQuick from "./whatsapp_quick.png";
 
 export {
-  logo,
   backend,
   creator,
   mobile,
@@ -71,4 +71,6 @@ export {
   nestjs,
   sql,
   airbnbClone,
+  nuerPay,
+  whatsappQuick,
 };

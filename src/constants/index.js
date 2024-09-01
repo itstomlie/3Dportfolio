@@ -29,6 +29,8 @@ import {
   nextjs,
   sql,
   airbnbClone,
+  nuerPay,
+  whatsappQuick,
 } from "../assets";
 
 export const navLinks = [
@@ -212,7 +214,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind CSS",
         color: "pink-text-gradient",
       },
     ],
@@ -220,48 +222,52 @@ const projects = [
     demoUrl: "https://airbnb.itstomlie.my.id/",
     sourceCodeLink: "https://github.com/itstomlie/airbnb-clone",
   },
-  // {
-  //   name: "Job IT",
-  //   description:
-  //     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "restapi",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "scss",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: jobit,
-  //   source_code_link: "https://github.com/",
-  // },
-  // {
-  //   name: "Trip Guide",
-  //   description:
-  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "supabase",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: tripguide,
-  //   source_code_link: "https://github.com/",
-  // },
+  {
+    name: "Nuer Pay",
+    description:
+      "A sophisticated mobile app that focuses on the dine-in restaurant experience, allowing you to book your table, browse menus, and pay without ever having to deal with wrong orders anymore",
+    tags: [
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GraphQL",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nuerPay,
+    demoUrl:
+      "https://drive.google.com/file/d/1HyQLUVKJmCxRVELrzyF0bB3vKoTE_0g3/view",
+    // source_code_link: "https://github.com/",
+  },
+  {
+    name: "Whatsapp Quick",
+    description:
+      "Instantly send messages to any phone number, even if it's not in your contact list.",
+    tags: [
+      {
+        name: "Flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SQLite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Google Play Store",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: whatsappQuick,
+    demoUrl:
+      "https://play.google.com/store/apps/details?id=com.itsTomLie.Whatsapp_Quick",
+    // source_code_link: "https://github.com/",
+  },
 ];
 
 const containerVariants = {
