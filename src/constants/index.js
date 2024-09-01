@@ -202,27 +202,6 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Airbnb Clone",
-    description: "Created using latest Next.js combined with supabase",
-    tags: [
-      {
-        name: "Next.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: airbnbClone,
-    demoUrl: "https://airbnb.itstomlie.my.id/",
-    sourceCodeLink: "https://github.com/itstomlie/airbnb-clone",
-  },
-  {
     name: "Nuer Pay",
     description:
       "A sophisticated mobile app that focuses on the dine-in restaurant experience, allowing you to book your table, browse menus, and pay without ever having to deal with wrong orders anymore",
@@ -267,6 +246,27 @@ const projects = [
     demoUrl:
       "https://play.google.com/store/apps/details?id=com.itsTomLie.Whatsapp_Quick",
     // source_code_link: "https://github.com/",
+  },
+  {
+    name: "Airbnb Clone",
+    description: "Created using latest Next.js combined with supabase",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: airbnbClone,
+    demoUrl: "https://airbnb.itstomlie.my.id/",
+    sourceCodeLink: "https://github.com/itstomlie/airbnb-clone",
   },
 ];
 
