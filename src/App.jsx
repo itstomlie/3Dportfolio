@@ -1,3 +1,4 @@
+import { HelmetProvider } from "react-helmet-async";
 import "./App.css";
 import {
   Hero,
@@ -12,7 +13,7 @@ import {
 
 function App() {
   return (
-    <>
+    <HelmetProvider>
       <Navbar />
       <Hero />
       <About />
@@ -23,7 +24,7 @@ function App() {
         <Contact />
         <StarsCanvas />
       </div>
-    </>
+    </HelmetProvider>
   );
 }
 
