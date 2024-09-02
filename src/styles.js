@@ -16,9 +16,9 @@ const styles = {
     "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
 
   heroTextGradient:
-    "bg-gradient-to-r from-gray-500 via-gray-300 to-white bg-clip-text text-transparent",
+    "bg-gradient-to-r from-gray-500 via-gray-300 to-white bg-clip-text text-transparent animate-gradient bg-300%",
   sectionTextGradient:
-    "bg-gradient-to-r from-gray-400 via-gray-50 to-white bg-clip-text text-transparent",
+    "bg-gradient-to-r from-gray-400 via-gray-50 to-white bg-clip-text text-transparent animate-gradient bg-300%",
 };
 
 export { styles };

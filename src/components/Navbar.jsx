@@ -44,7 +44,7 @@ const Navbar = () => {
         <a href="/" className="flex justify-center items-center gap-3">
           <img src="./planet.ico" alt="logo" className="w-8" />
           <h1
-            className={`text-lg font-bold bg-gradient-to-r from-white via-gray-300 to-gray-400 bg-clip-text text-transparent`}
+            className={`text-lg font-bold bg-gradient-to-r from-white via-gray-300 to-gray-400 bg-clip-text text-transparent animate-gradient`}
           >
             Tommy Lie | Portfolio
           </h1>

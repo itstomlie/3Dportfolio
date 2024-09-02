@@ -25,7 +25,7 @@ const About = () => {
         </motion.div>
         <motion.div variants={itemVariants}>
           <p className={`text-secondary`}>
-            A versatile full-stack developer with a passion for continuous
+            A versatile full-stack engineer with a passion for continuous
             learning. I blend development expertise with project management
             skills to deliver effective solutions. Currently pursuing AI
             engineering to enhance my technical repertoire and application

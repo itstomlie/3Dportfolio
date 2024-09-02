@@ -20,7 +20,7 @@ const Hero = () => {
           </h1>
 
           <p className={`${styles.heroSubText} `}>
-            Full-Stack Developer and budding AI engineer
+            Full-Stack Engineer and budding AI engineer
           </p>
         </div>
       </div>

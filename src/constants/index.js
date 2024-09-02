@@ -54,11 +54,11 @@ const services = [
     icon: web,
   },
   {
-    title: "Frontend Developer",
+    title: "Front-end Engineer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Back-end Engineer",
     icon: backend,
   },
   {
@@ -137,7 +137,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Product Manager + Fullstack Engineer",
+    title: "Product Manager + Full-stack Engineer",
     company_name: "PT. Bangun Rancang Indonesia Kita (BRIK)",
     icon: brik,
     iconBg: "#383E56",
@@ -149,7 +149,7 @@ const experiences = [
     ],
   },
   {
-    title: "Fullstack Engineer",
+    title: "Full-stack Engineer",
     company_name: "PT. Bangun Rancang Indonesia Kita (BRIK)",
     icon: brik,
     iconBg: "#383E56",
@@ -161,7 +161,7 @@ const experiences = [
     ],
   },
   {
-    title: "Backend Software Engineer",
+    title: "Back-end Software Engineer",
     company_name: "PT. Usaha Pintar Pratama (Pasarnow)",
     icon: pasarnow,
     iconBg: "#383E56",
