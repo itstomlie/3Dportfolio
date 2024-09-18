@@ -1,31 +1,20 @@
 import { HelmetProvider } from "react-helmet-async";
 import "./App.css";
-import {
-  Hero,
-  Navbar,
-  About,
-  Experience,
-  Tech,
-  Projects,
-  Contact,
-  StarsCanvas,
-} from "./components";
-import Blog from "./components/Blog";
+import MainPage from "./components/MainPage";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import BlogList from "./components/Blogs/BlogList.jsx";
+import BlogDetail from "./components/Blogs/BlogDetail";
 
 function App() {
   return (
     <HelmetProvider>
-      <Navbar />
-      <Blog />
-      <Hero />
-      <About />
-      <Experience />
-      <Tech />
-      <Projects />
-      <div className="bg-primary relative">
-        <Contact />
-        <StarsCanvas />
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/blogs" element={<BlogList />} />
+          <Route path="/blogs/:slug" element={<BlogDetail />} />
+        </Routes>
+      </Router>
     </HelmetProvider>
   );
 }
