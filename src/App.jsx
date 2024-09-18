@@ -10,11 +10,13 @@ import {
   Contact,
   StarsCanvas,
 } from "./components";
+import Blog from "./components/Blog";
 
 function App() {
   return (
     <HelmetProvider>
       <Navbar />
+      <Blog />
       <Hero />
       <About />
       <Experience />

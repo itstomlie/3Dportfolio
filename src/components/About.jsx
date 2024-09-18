@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { Tilt } from "react-tilt";
 import { containerVariants, itemVariants, services } from "../constants";
+import { GithubBlog } from "@rena.to/github-blog";
 
 const About = () => {
   return (
