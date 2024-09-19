@@ -57,7 +57,7 @@ const BlogDetail = () => {
               overrides: {
                 a: {
                   props: {
-                    className: "text-secondary hover:text-[#62fcd1] underline",
+                    className: "text-[#facc15] hover:text-[#62fcd1]",
                   },
                 },
               },
