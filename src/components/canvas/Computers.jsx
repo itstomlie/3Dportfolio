@@ -1,6 +1,6 @@
 import { useGLTF, Preload, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { Suspense, useEffect, useState } from "react";
+import { Suspense } from "react";
 import useScreenSize from "../../hooks/useScreenSize";
 import CanvasLoader from "./CanvasLoader";
 

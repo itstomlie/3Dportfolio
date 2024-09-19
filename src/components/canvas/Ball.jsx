@@ -1,7 +1,6 @@
 import {
   Preload,
   OrbitControls,
-  Icosahedron,
   Float,
   Decal,
   useTexture,
