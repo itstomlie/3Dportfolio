@@ -1,6 +1,5 @@
 import {
   Hero,
-  Navbar,
   About,
   Experience,
   Tech,
@@ -12,7 +11,6 @@ import {
 const MainPage = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <About />
       <Experience />

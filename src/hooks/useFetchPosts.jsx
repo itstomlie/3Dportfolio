@@ -30,11 +30,20 @@ const useFetchPosts = (slug = null) => {
           );
           const postSlug = slugLabel ? slugLabel.name.split(":")[1] : null;
 
+          const formattedDate = new Date(post.created_at).toLocaleDateString(
+            "id-ID",
+            {
+              day: "numeric",
+              month: "short",
+              year: "numeric",
+            }
+          );
+
           return {
             title: post.title,
             body: post.body,
             slug: postSlug,
-            createdAt: post.created_at,
+            createdAt: formattedDate,
           };
         });
 

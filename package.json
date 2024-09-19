@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
     "@react-three/drei": "^9.106.0",
     "@react-three/fiber": "^8.16.8",
     "framer-motion": "^11.2.10",
+    "gray-matter": "^4.0.3",
     "lucide-react": "^0.400.0",
     "maath": "^0.10.7",
     "markdown-to-jsx": "^7.5.0",
