@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { styles } from "../styles";
+import { styles } from "../../styles";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { containerVariants, experiences, itemVariants } from "../constants";
+import { containerVariants, experiences, itemVariants } from "../../constants";
 
 const Experience = () => (
   <div id="experience" className="scroll-mt-14 md:scroll-mt-10">

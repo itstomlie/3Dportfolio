@@ -1,5 +1,5 @@
-import { EarthCanvas } from "./canvas";
-import { styles } from "../styles";
+import { EarthCanvas } from "../Canvas";
+import { styles } from "../../styles";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useRef, useState } from "react";

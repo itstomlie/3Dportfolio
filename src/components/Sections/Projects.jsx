@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { containerVariants, itemVariants, projects } from "../constants";
+import { styles } from "../../styles";
+import { containerVariants, itemVariants, projects } from "../../constants";
 import { Tilt } from "react-tilt";
-import { github } from "../assets";
+import { github } from "../../assets";
 const Projects = () => {
   return (
     <div

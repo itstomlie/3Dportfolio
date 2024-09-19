@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { styles } from "../styles";
+import { styles } from "../../styles";
 import { Tilt } from "react-tilt";
-import { containerVariants, itemVariants, services } from "../constants";
+import { containerVariants, itemVariants, services } from "../../constants";
 
 const About = () => {
   return (

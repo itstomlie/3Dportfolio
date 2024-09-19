@@ -3,15 +3,15 @@ import {
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
-} from "./canvas";
-import Hero from "./Hero";
+} from "./Canvas";
+import Hero from "./Sections/Hero";
 import Navbar from "./Navbar";
-import About from "./About";
-import Tech from "./Tech";
-import Experience from "./Experience";
-import Projects from "./Projects";
-import Feedbacks from "./Feedbacks";
-import Contact from "./Contact";
+import About from "./Sections/About";
+import Tech from "./Sections/Tech";
+import Experience from "./Sections/Experience";
+import Projects from "./Sections/Projects";
+import Feedbacks from "./Sections/Feedbacks";
+import Contact from "./Sections/Contact";
 
 export {
   Hero,

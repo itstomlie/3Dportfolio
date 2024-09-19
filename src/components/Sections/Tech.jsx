@@ -1,6 +1,6 @@
-import { technologies } from "../constants";
-import { styles } from "../styles";
-import { BallCanvas } from "./canvas";
+import { technologies } from "../../constants";
+import { styles } from "../../styles";
+import { BallCanvas } from "../Canvas";
 import { useInView } from "react-intersection-observer";
 
 const TechnologyBall = ({ icon, name }) => {
